@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Calculator</title>
+        <link href="./style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <div class="main">
+            <div class="container">
+
+                <div class="input">
+                    <input type="text" id="txtbox" class="txt" >
+                </div>
+                
+                <div class="button">
+
+                    <button class="btn hide" hidden onclick="calculateExponent()">x^y</button>
+                    <button class="btn hide" hidden onclick="calculateLogBase10()">lg</button>
+                    <button class="btn hide" hidden onclick="calculateNaturalLog()">ln</button>
+                    <button class="btn hide" hidden onclick="addInInput('(')">(</button>
+                    <button class="btn hide" hidden onclick="addInInput(')')">)</button>
+
+                </div>
+
+                <div class="button">
+
+                    <button class="btn hide" hidden onclick="calculateSquareRoot()">√</button>
+                    <button class="btn diff" onclick="clearInput()">AC</button>
+                    <button class="btn diff" onclick="backspace()">⪻</button>
+                    <button class="btn diff" onclick="addInInput('%')">%</button>
+                    <button class="btn diff" onclick="addInInput('/')">÷</button>
+
+                </div>
+                <div class="button">
+                
+                    <button class="btn hide" hidden onclick="calculateFactorial()">x!</button>
+                    <button class="btn" onclick="addInInput('7')">7</button>
+                    <button class="btn" onclick="addInInput('8')">8</button>
+                    <button class="btn" onclick="addInInput('9')">9</button>
+                    <button class="btn diff" onclick="addInInput('*')">×</button>
+
+                </div>
+                <div class="button">
+                
+                    <button class="btn hide" hidden onclick="calculateInverse()">1/x</button>
+                    <button class="btn" onclick="addInInput('4')">4</button>
+                    <button class="btn" onclick="addInInput('5')">5</button>
+                    <button class="btn" onclick="addInInput('6')">6</button>
+                    <button class="btn diff" onclick="addInInput('-')">-</button>
+
+                </div>
+                <div class="button">
+                
+                    <button class="btn hide" hidden onclick="addInInput('3.14159265')">⫪</button>
+                    <button class="btn" onclick="addInInput('1')">1</button>
+                    <button class="btn" onclick="addInInput('2')">2</button>
+                    <button class="btn" onclick="addInInput('3')">3</button>
+                    <button class="btn diff" onclick="addInInput('+')">+</button>
+
+                </div>
+                <div class="button">
+                
+                    <button class="btn hide" hidden onclick="addInInput('2.71828183')">e</button>
+                    <button class="btn btn1 diff">↩</button>
+                    <button class="btn" onclick="addInInput('0')">0</button>
+                    <button class="btn" onclick="addInInput('.')">.</button>
+                    <button class="btn diff" onclick="calculate()">=</button>
+
+                </div>
+            
+            </div>
+
+        </div>
+        
+        <script src="./index.js"></script>
+    </body>
+</html>
